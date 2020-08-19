@@ -1,13 +1,7 @@
 "use strict";
 
-const formatString = function (string) {
-  let symbolsArray = string.split("");
-  if (symbolsArray.length <= 40) {
-    return string;
-  } else {
-    let shortString = string.slice(0, 41);
-    return `${shortString} ...`;
-  }
+const formatString = (string) => {
+  return string.length <= 40 ? string : `${string.slice(0, 41)} ...`;
 };
 
 /*
