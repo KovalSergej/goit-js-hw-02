@@ -11,11 +11,13 @@ do {
       continue;
     }
     numbers.push(+input);
-  } else {
-    let total = 0;
-    for (let number of numbers) {
-      total += number;
-    }
-    console.log(`Общая сумма чисел равна ${total}.`);
-  }
+  } 
 } while (input !== null);
+
+if (numbers.length) {
+  let total = 0;
+  for (let number of numbers) {
+    total += number;
+  }
+  console.log(`Общая сумма чисел равна ${total}.`);
+}
